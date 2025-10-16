@@ -1,0 +1,167 @@
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  color: #3cb38b;
+  font-size: 5.5rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  color: #3cb38b;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0; 
+}
+
+
+a{
+  color: #f0f5f3;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+.email-link {
+  color: #3cb38b;
+}
+
+a:hover {
+  color: #8f11d8;
+}
+
+
+.top-container {
+  background-image: url("bg_picture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #E4F9F5;
+  height: 100vh;       
+  width: 100%;
+  display: flex;             
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;        
+  text-align: center;
+  position: relative;
+  padding-top: 5px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+  background-color: #DDA0DD;
+  padding: 50px 0 20px;
+}
+
+.intro {
+  width: 50%;
+  margin: auto;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-items: center;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 3px solid #DDA0DD;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  
+}
+
+.projects {
+  background-color: transparent;
+  grid-column: span 2;
+  justify-self: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: hidden; 
+}
+
+.window-header {
+  background-color: #3cb38b;
+  padding: 12px 16px;
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px solid #10875f;
+}
+
+.window-content {
+  background-color: #fdffe9;
+  padding: 60px 40px;
+  position: relative;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('pointer.png');
+  background-repeat: no-repeat;
+  background-position: right 80px bottom 120px;
+  background-size: 30px 30px;
+}
+
+button{
+  background-color: #DDA0DD;
+  border: 3px solid #cb6ad8;
+  border-radius: 20px;
+  padding: 20px 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  transition: all 0.2s ease;
+
+}
+
+ .window-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #10875f;
+}
+
+
+.projects:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  cursor: pointer;
+}
